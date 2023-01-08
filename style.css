@@ -23,20 +23,22 @@
     border-radius: 5px;
     border-color: white;
 outline: 2px;
-outline-style:double;
-outline-color:rgb(61, 87, 214); ;
+outline-style:groove;
+outline-color:#5274ae; 
 
 }
 .text1{
     font-weight: bolder;
 }
-.bg-li8{
-    background-color: rgb(117, 98, 241);
+.bg-li8,.bg-li82{
+    /* background-color: rgb(117, 98, 241); */
+
+    background-color: #3a4e71;
  
 }
-.bg-li82{
+/* .bg-li82{
     background-color: rgb(117, 98, 241);
-}
+} */
 
 .footer{
    
@@ -46,7 +48,7 @@ display: flex;
 
 }
 
-.social:hover{
+a:hover{
 font-weight: 600;
 
 }
@@ -73,8 +75,7 @@ li:hover{
 }
 
 .count-btn{
-    background-color: rgb(117, 98, 241);
-    border-radius: 5px;
+   background-color: #3a4e71;    border-radius: 5px;
     border: none;
     color: white;
     padding: 8px;
@@ -82,7 +83,7 @@ li:hover{
     padding-right: 15px;
 }
 .count-btn:hover{
-    background-color: rgb(81, 64, 191);
+     background-color: #293241;
     border-radius: 5px;
     border: none;
    
@@ -106,8 +107,8 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: rgb(117, 98, 241);
-    color: white;
+   background-color: #3a4e71;
+       color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -116,8 +117,7 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: rgb(117, 98, 241);
-  }
+   background-color: #3a4e71;  }
   
   /* Add a background color and some padding around the form */
   .container-form {
@@ -135,4 +135,6 @@ input[type=text], select, textarea {
     background-color: rgba(236, 236, 236, 0.398);
     border-radius: 10px;
     color: rgb(50, 50, 50);
+    cursor: context-menu;
   }
+
