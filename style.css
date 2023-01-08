@@ -133,8 +133,15 @@ input[type=text], select, textarea {
   .menu-item:hover{
 
     background-color: rgba(236, 236, 236, 0.398);
-    border-radius: 10px;
+    border-radius: 5px;
     color: rgb(50, 50, 50);
     cursor: context-menu;
   }
 
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+
+}
