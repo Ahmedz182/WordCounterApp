@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $(".changetext").hide();
+
     $("#btn2").click(function () {
 
         $(".changetext").show();
