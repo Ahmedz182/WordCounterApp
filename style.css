@@ -10,7 +10,7 @@
    
 }
 .text-sen{
-    background-color: rgba(61, 86, 214, 0.27);
+    background-color: #92a6c886;
     border-radius: 5px;
     outline: none;
     border: white;
@@ -43,6 +43,7 @@ outline-color:#5274ae;
 .footer{
    
 display: flex;
+
 
 
 
@@ -139,6 +140,7 @@ input[type=text], select, textarea {
   }
 
 header{
+    
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -146,3 +148,15 @@ header{
  
 
 }
+#changetext{
+    
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 15px;
+}
+#newtext{
+    padding-left: 20px;
+
+} 
+
+

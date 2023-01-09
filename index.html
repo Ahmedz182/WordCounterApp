@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Our online editor can help you improve your word choice and writing style in addition to word and character counts, as well as, optionally, help you find grammar errors and plagiarised material. Simply place your cursor in the text box above and begin typing to check the word count. As you type, delete, and revise them, you'll notice a rise or decrease in the amount of letters and words. Text from another software can easily be copied and pasted into the editor online shown above. Even if you leave the site and return later, the Auto-Save tool will make sure you don't lose any changes you make while editing."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -14,6 +18,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Word Counter App</title>
   </head>
@@ -78,14 +83,36 @@
           rows="12"
           placeholder=" Paste text here.."
         ></textarea>
-
-        <button class="float-end mt-2 count-btn" id="btn" onclick="counters">
+        <button
+          class="float-end mt-2 count-btn me-2"
+          id="btn"
+          onclick="counters"
+        >
           Lets Count
         </button>
+        <button
+          class="float-end mt-2 count-btn me-2"
+          id="btn3"
+          onclick="uppercase"
+        >
+          Upper Case
+        </button>
+        <button
+          class="float-end mt-2 count-btn me-2"
+          id="btn2"
+          onclick="lowercase"
+        >
+          Lower Case
+        </button>
+
         <br />
         <br />
         <p class="text1" id="word">Total words :</p>
         <p class="text1 mb-5" id="chr">Total charcters :</p>
+      </div>
+      <div class="container bg-info-subtle changetext" id="changetext">
+        <h3><b>Generated Text:</b></h3>
+        <p class="border-5 card-body" id="newtext"></p>
       </div>
     </div>
     <h3 class="container">What is Word Counter App?</h3>
