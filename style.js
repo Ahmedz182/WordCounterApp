@@ -6,7 +6,8 @@ $(document).ready(function () {
     $("#btn").click(function () {
 
         $(".loader").show().delay(2000).hide("slow");
-        counters();
+
+
     });
 
 
@@ -28,13 +29,14 @@ $(document).ready(function () {
 });
 
 
-var btn1 = document.getElementById('btn')
+var btn1 = document.getElementById('btn').addEventListener("click", counters);
 
 // var btn1 = document.getElementById('btn')
 var btn2 = document.getElementById('btn2').addEventListener("click", lowercase);
 var btn3 = document.getElementById('btn3').addEventListener("click", uppercase);
 
-setTimeout(function counters() {
+
+function counters() {
 
     let txt = document.getElementById('texts')
     let newtxt = txt.value
@@ -44,7 +46,7 @@ setTimeout(function counters() {
     document.getElementById('word').innerText = "Total words : " + counter
 
 
-}, 3000);
+}
 
 
 function lowercase() {
