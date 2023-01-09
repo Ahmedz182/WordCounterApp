@@ -12,12 +12,14 @@ $(document).ready(function () {
 
 
     $("#btn2").click(function () {
+        $(".textcount").hide();
         $(".changetext").hide();
         $(".loader").show().delay(2000).hide("slow");
         $(".changetext").delay(2000).show(300);
 
     });
     $("#btn3").click(function () {
+        $(".textcount").hide();
         $(".changetext").hide();
         $(".loader").show().delay(2000).hide("slow");
         $(".changetext").delay(2000).show(300);
