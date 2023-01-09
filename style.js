@@ -1,24 +1,38 @@
 $(document).ready(function () {
 
     $(".changetext").hide();
+    $(".loader").hide();
+
+    $("#btn").click(function () {
+
+        $(".loader").show().delay(2000).hide("slow");
+        counters();
+    });
+
+
 
     $("#btn2").click(function () {
+        $(".changetext").hide();
+        $(".loader").show().delay(2000).hide("slow");
+        $(".changetext").delay(2000).show(300);
 
-        $(".changetext").show();
     });
     $("#btn3").click(function () {
-
-        $(".changetext").show();
+        $(".changetext").hide();
+        $(".loader").show().delay(2000).hide("slow");
+        $(".changetext").delay(2000).show(300);
     });
 
 });
 
 
-var btn1 = document.getElementById('btn').addEventListener("click", counters);
+var btn1 = document.getElementById('btn')
+
+// var btn1 = document.getElementById('btn')
 var btn2 = document.getElementById('btn2').addEventListener("click", lowercase);
 var btn3 = document.getElementById('btn3').addEventListener("click", uppercase);
 
-function counters() {
+setTimeout(function counters() {
 
     let txt = document.getElementById('texts')
     let newtxt = txt.value
@@ -27,7 +41,8 @@ function counters() {
     let counter = myArray.length;
     document.getElementById('word').innerText = "Total words : " + counter
 
-}
+
+}, 3000);
 
 
 function lowercase() {

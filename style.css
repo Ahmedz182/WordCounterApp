@@ -59,7 +59,7 @@ a{
 }
 a:hover{
     font-weight: 600;
-    cursor:context-menu;
+   
 }
 
 li{
@@ -128,6 +128,7 @@ input[type=text], select, textarea {
   }
 
  a .menu-item{
+    
     color: white;
 
   }
@@ -136,7 +137,7 @@ input[type=text], select, textarea {
     background-color: rgba(236, 236, 236, 0.398);
     border-radius: 5px;
     color: rgb(50, 50, 50);
-    cursor: context-menu;
+ 
   }
 
 header{
@@ -160,3 +161,36 @@ margin-bottom: 15px;
 } 
 
 
+.loader {
+    margin-left: 45%;
+    margin-right: 5%;
+   
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 2px solid #FF3D00;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border: 2px solid #3a4e71;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
